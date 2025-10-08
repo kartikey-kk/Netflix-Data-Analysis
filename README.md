@@ -1,32 +1,46 @@
 # 🎬 Netflix Data Analysis & Recommendation System
 
 ## 📌 Overview
-This project explores Netflix’s dataset to uncover insights into content distribution, genre trends, and more.  
-Additionally, a simple text-based recommendation system suggests similar shows/movies using TF-IDF and cosine similarity.
-
-## 🔧 Tech Stack
-- Python, Pandas, NumPy
-- Matplotlib, Seaborn
-- scikit-learn
-- WordCloud
-
-## 📊 Key Insights
-- Movies are more common than TV shows.
-- USA produces the highest number of titles.
-- Drama and Comedy are the most frequent genres.
-
-## 🧠 Recommendation System
-A TF-IDF-based model that recommends 5 similar titles for a given movie/show.
-
-## 🧾 Dataset
-Source: [Kaggle Netflix Dataset](https://www.kaggle.com/datasets/shivamb/netflix-shows)
-
-## 🚀 How to Run
-1. Clone this repo
-2. Run `pip install -r requirements.txt`
-3. Open `netflix_analysis.ipynb` and execute cells.
-
-## 📷 Sample Output
-*(Add screenshot of graphs or wordcloud here)*
+This project analyzes Netflix’s dataset to uncover insights about movies and TV shows, including trends in content production, popular genres, and content distribution over the years.  
+Additionally, it includes a simple content **recommendation system** based on description similarity.
 
 ---
+
+## 🔧 Tech Stack
+- **Python:** Pandas, NumPy  
+- **Visualization:** Matplotlib, Seaborn, WordCloud  
+- **Machine Learning:** scikit-learn (TF-IDF, Cosine Similarity)  
+- **Environment:** Jupyter Notebook  
+
+---
+
+## 📊 Key Insights
+
+### 1️⃣ Movies vs TV Shows
+![Movies vs TV Shows](images/output.png)  
+- Movies are more common than TV shows on Netflix.
+
+### 2️⃣ Top 10 Content-Producing Countries
+![Top Countries](images/output2.png)  
+- USA produces the highest number of titles.
+
+### 3️⃣ Content Added Over the Years
+![Content Over Years](images/output3.png)  
+- Netflix content has steadily increased over the years.
+
+### 4️⃣ Top 10 Genres
+![Top Genres](images/output4.png)  
+- Drama and Comedy are the most frequent genres.
+
+### 5️⃣ Word Cloud of Titles
+![Word Cloud](images/output5.png)  
+- Visualizes the most common words in Netflix titles.
+
+---
+
+## 🤖 Recommendation System
+- **Method:** TF-IDF vectorization + Cosine Similarity  
+- **Functionality:** Given a title, recommends 5 similar shows/movies based on description.  
+- **Example Usage:**
+```python
+recommend('Narcos')
